@@ -13,11 +13,19 @@ class SolarSystem extends React.Component {
     ));
 
     return (
-      <div data-testid="solar-system" className='solar-system'>
+      <div data-testid="solar-system" className="solar-system">
         <Title headline="Planetas" />
-        <audio src={music} autoPlay />
-        <img src={require('../images/Sol.png')} id="Sol"/>
-        { planetsData }
+        <audio src={ music } autoPlay controls>
+          <track
+            kind="captions"
+            label="English captions"
+            srcLang="en"
+            default
+          />
+          Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <img src={ require('../images/Sol.png') } id="Sol" alt="Sol" />
+        {planetsData}
       </div>
     );
   }

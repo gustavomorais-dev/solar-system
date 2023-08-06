@@ -1,8 +1,8 @@
 .missions-cards ul {
     max-width: 100%;
     display: flex;
-    flex-wrap: wrap; /* Adicione flex-wrap para que os itens quebrem para a próxima linha */
-    list-style: none; /* Remova os marcadores da lista */
+    flex-wrap: wrap;
+    list-style: none; 
 }
 
 .mission-card {
