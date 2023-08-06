@@ -2,6 +2,7 @@ import React from 'react';
 import Title from './Title';
 import planets from '../data/planets';
 import PlanetCard from './PlanetCard';
+import music from '../music/final-space.mp3';
 
 class SolarSystem extends React.Component {
   render() {
@@ -12,8 +13,10 @@ class SolarSystem extends React.Component {
     ));
 
     return (
-      <div data-testid="solar-system">
+      <div data-testid="solar-system" className='solar-system'>
         <Title headline="Planetas" />
+        <audio src={music} autoPlay />
+        <img src={require('../images/Sol.png')} id="Sol"/>
         { planetsData }
       </div>
     );

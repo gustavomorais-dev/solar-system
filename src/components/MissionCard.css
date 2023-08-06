@@ -1,0 +1,29 @@
+.missions-cards ul {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Adicione flex-wrap para que os itens quebrem para a próxima linha */
+    list-style: none; /* Remova os marcadores da lista */
+}
+
+.mission-card {
+    border-radius: 10px;
+    width: 250px;
+    height: 180px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #fff;
+    padding: 10px;
+    margin: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #fff;
+    text-align: center;
+}
+
+.mission-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mission-info {
+    font-size: 14px;
+    margin-bottom: 4px;
+}

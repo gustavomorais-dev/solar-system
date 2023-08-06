@@ -1,0 +1,133 @@
+header {
+    position: absolute;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.solar-system {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+#Sol {
+    width: 100vh;
+    position: absolute;
+    margin: auto;
+    margin-top: 10vh;
+    z-index: 1;
+}
+
+.planet-card {
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.planet-card p {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 15%;
+}
+
+#planet-Mercúrio-card {
+    position: absolute;
+    animation: moveAnimation 7s infinite linear;
+}
+
+#planet-Mercúrio {
+    width: 0.38vh;
+    position: absolute;
+}
+
+#planet-Vênus-card {
+    position: absolute;
+    animation: moveAnimation 13.6316s infinite linear;
+}
+
+#planet-Vênus {
+    width: 0.98vh;
+    position: absolute;
+}
+
+#planet-Terra-card {
+    position: absolute;
+    animation: moveAnimation 19.7093s infinite linear;
+}
+
+#planet-Terra {
+    width: 1vh;
+    position: absolute;
+}
+
+#planet-Marte-card {
+    position: absolute;
+    animation: moveAnimation 35.1884s infinite linear;
+}
+
+#planet-Marte {
+    width: 0.53vh;
+    position: absolute;
+}
+
+#planet-Júpiter-card {
+    position: absolute;
+    animation: moveAnimation 560.29s infinite linear;
+}
+
+#planet-Júpiter {
+    width: 11.21vh;
+    position: absolute;
+}
+
+#planet-Saturno-card {
+    position: absolute;
+    animation: moveAnimation 470.3649s infinite linear;
+}
+
+#planet-Saturno {
+    width: 9.45vh;
+    position: absolute;
+}
+
+#planet-Urano-card {
+    position: absolute;
+    animation: moveAnimation 375.207s infinite linear;
+}
+
+#planet-Urano {
+    width: 4.01vh;
+    position: absolute;
+}
+
+#planet-Netuno-card {
+    position: absolute;
+    animation: moveAnimation 2992.34s infinite linear;
+}
+
+#planet-Netuno {
+    width: 3.88vh;
+    position: absolute;
+}
+
+
+
+@keyframes moveAnimation {
+    0% {
+        left: 0vw;
+        z-index: 2;
+    }
+    50% {
+        left: 100vw;
+        z-index: 0;
+    }
+    100% {
+        left: 0.01vw;
+    }
+}
